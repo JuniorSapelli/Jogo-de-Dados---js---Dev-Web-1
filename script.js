@@ -50,7 +50,7 @@ function gerarImagemFaces(face){
             document.write("<img src=\"faces_dado/face_nSeis.png>");
             break;   
     }
-}
+} 
 
 //função que gera as informações da pessoa na tela
 function gerarPessoa(pessoaDado1, pessoaDado2, somaPessoa){
