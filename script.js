@@ -1,7 +1,4 @@
 //variáveis
-var pessoa = "pessoa";
-var maquina = "maquina";
-
 var pessoaDado1 = 0;
 var pessoaDado2 = 0;
 var maquinaDado1 = 0;
@@ -11,7 +8,7 @@ var somaPessoa = 0;
 var somaMaquina = 0;
 
 //função para gerar o número das faces dos dados
-function gerarFacesAleatorias(minimo, maximo) {
+function gerarFacesAleatorias() {
     minimo = Math.ceil(minimo);
     maximo = Math.floor(maximo);
     return Math.floor(Math.random() * (maximo - minimo)) + minimo;
@@ -55,19 +52,51 @@ function gerarImagemFaces(face){
     }
 }
 
+//função que gera as informações da pessoa na tela
+function gerarPessoa(pessoaDado1, pessoaDado2, somaPessoa){
+    document.write("Seus dados foram:");
+    document.write('<br>');
+    document.write("Face 1: ");
+    gerarImagemFaces(pessoaDado1);
+    document.write('<br>');
+    document.write("Face 2: ");
+    gerarImagemFaces(pessoaDado2);
+    document.write('<br>');
+    document.write("Soma das faces: " + somaPessoa);
+    document.write('<br>');
+}
+
+//função que gera as informações da pessoa na tela
+function gerarMaquina(maquinaDado1, maquinaDado2, somaMaquina){
+    document.write("Seus dados foram:");
+    document.write('<br>');
+    document.write("Face 1: ");
+    gerarImagemFaces(maquinaDado1);
+    document.write('<br>');
+    document.write("Face 2: ");
+    gerarImagemFaces(maquinaDado2);
+    document.write('<br>');
+    document.write("Soma das faces: " + somaMaquina);
+    document.write('<br>');
+}
+
 //função que retorna o vencedor
 function ganhador(somaPessoa, somaMaquina){
     switch(true){
         case somaPessoa > somaMaquina:
-            return "Parabéns você ganhou!";
-            break;
+            document.write("Parabéns você ganhou!");
         case somaMaquina > somaPessoa: 
-            return "Você perdeu!";
-            break;
+            document.write("Você perdeu!");
         case somaPessoa == somaMaquina: 
-            return "A soma das faces foram iguais, você empatou!";
-            break;
+            document.write("A soma das faces foram iguais, você empatou!");
     }
 }
+
+//chamada das funções
+gerarPessoa(pessoaDado1, pessoaDado2, somaPessoa);
+gerarMaquina(maquinaDado1, maquinaDado2, somaMaquina);
+ganhador(somaPessoa, somaMaquina);
+
+
 
 
