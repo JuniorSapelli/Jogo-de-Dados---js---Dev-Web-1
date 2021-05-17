@@ -8,7 +8,7 @@ var somaPessoa = 0;
 var somaMaquina = 0;
 
 //função para gerar o número das faces dos dados
-function gerarFacesAleatorias() {
+function gerarFacesAleatorias(minimo, maximo) {
     minimo = Math.ceil(minimo);
     maximo = Math.floor(maximo);
     return Math.floor(Math.random() * (maximo - minimo)) + minimo;
