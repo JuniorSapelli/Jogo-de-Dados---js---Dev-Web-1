@@ -54,3 +54,20 @@ function gerarImagemFaces(face){
             break;   
     }
 }
+
+//função que retorna o vencedor
+function ganhador(somaPessoa, somaMaquina){
+    switch(true){
+        case somaPessoa > somaMaquina:
+            return "Parabéns você ganhou!";
+            break;
+        case somaMaquina > somaPessoa: 
+            return "Você perdeu!";
+            break;
+        case somaPessoa == somaMaquina: 
+            return "A soma das faces foram iguais, você empatou!";
+            break;
+    }
+}
+
+
