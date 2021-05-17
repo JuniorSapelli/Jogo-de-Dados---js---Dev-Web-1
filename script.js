@@ -32,22 +32,22 @@ var somaMaquina = somaFaces(maquinaDado1, maquinaDado2);
 function gerarImagemFaces(face){
     switch(face){
         case 1:
-            document.write("<img src=\"faces_dados/face_nUm.png>");
+            document.write("<img src=\"faces_dado/face_nUm.png>");
             break;
         case 2:
-            document.write("<img src=\"faces_dados/face_nDois.png>");
+            document.write("<img src=\"faces_dado/face_nDois.png>");
             break;
         case 3:
-            document.write("<img src=\"faces_dados/face_nTres.png>");
+            document.write("<img src=\"faces_dado/face_nTres.png>");
             break;
         case 4:
-            document.write("<img src=\"faces_dados/face_nQuatro.png>");
+            document.write("<img src=\"faces_dado/face_nQuatro.png>");
             break;
         case 5:
-            document.write("<img src=\"faces_dados/face_nCinco.png>");
+            document.write("<img src=\"faces_dado/face_nCinco.png>");
             break;
         case 6:
-            document.write("<img src=\"faces_dados/face_nSeis.png>");
+            document.write("<img src=\"faces_dado/face_nSeis.png>");
             break;   
     }
 }
